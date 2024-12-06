@@ -1,0 +1,291 @@
+@import url("../Satoshi_Complete/Fonts/WEB/css/satoshi.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  max-width: 90rem; /* Desktop Figma width */
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* header starts here */
+header {
+  padding: 1.2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  max-width: 90rem;
+  width: 90%;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+header p {
+  font-weight: 900;
+  font-size: 20px;
+  color: #fcfcfc;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 1rem;
+  color: #fcfcfc;
+}
+
+header button {
+  background: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  color: #18181b;
+}
+
+/* banner starts here */
+.banner {
+  height: 55rem;
+  background: url(../assests/Hero.svg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.93) 107.96%
+    ),
+    linear-gradient(360deg, rgba(0, 0, 0, 0) 89.75%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 4rem;
+  left: 4.875rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 104px;
+}
+
+.banner .gallery {
+  position: absolute;
+  width: 13.25rem;
+  height: 28.75rem;
+  background: linear-gradient(
+    108.46deg,
+    rgba(255, 255, 255, 0.264) 0%,
+    rgba(255, 255, 255, 0.066) 100%
+  );
+  border: 1px;
+  border-radius: 12px;
+  padding: 8px;
+  bottom: 3.5rem;
+  left: 73rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.banner .arrow {
+  position: absolute;
+  border: 1px;
+  border-color: rgba(255, 255, 255, 1);
+  bottom: 76px;
+  right: 380px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+}
+/* banner ends here */
+
+/* discover starts here */
+.discover {
+  margin: 80px;
+}
+.discover .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discover .text .left {
+  width: 50%;
+  font-weight: 400;
+  font-size: 52px;
+  color: rgba(24, 24, 27, 1);
+}
+
+.discover .text .right {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #70707B;
+  }
+
+
+.discover .text button {
+  background: rgba(24, 24, 27, 1);
+  font-weight: 500;
+  font-size: 16px;
+  width: 128px;
+  height: 45px;
+  border-radius: 12px;
+  padding: 10px 18px;
+  color: white;
+  margin-top: 8px;
+}
+
+.discover-img{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin: 56px auto;
+    height: 626px;
+    width: 100%;
+}
+
+.discover-img h3{
+font-size: 24px;
+font-weight: 400;
+text-align: left;
+color: #18181B;
+margin-top: 24px;
+margin-bottom: 8px;
+}
+.discover-img p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #70707B; 
+}
+
+.discover-img .img1{
+    width: 316px;
+    height: 401px;
+}
+.discover-img .img2{
+    width: 402px;
+    height: 451px;
+    margin-top: 169px;
+}
+.discover-img .img3{
+    width: 498px;
+    height: 510px;
+}
+
+
+/* discover ends here */
+
+/* responsive styles */
+@media (max-width: 1440px) {
+  body {
+    max-width: 90%;
+  }
+  header {
+    padding: 1.2rem 4rem;
+  }
+  .banner h1 {
+    font-size: 80px;
+  }
+  .banner .gallery {
+    left: 68rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  .banner h1 {
+    font-size: 60px;
+    left: 3rem;
+    bottom: 3rem;
+  }
+  .banner .gallery {
+    width: 10rem;
+    height: 20rem;
+    left: auto;
+    right: 3rem;
+    bottom: 2rem;
+  }
+  .banner .arrow {
+    bottom: 60px;
+    right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  header button {
+    margin-top: 1rem;
+  }
+  .banner h1 {
+    font-size: 40px;
+    left: 2rem;
+    bottom: 2rem;
+  }
+  .banner .gallery {
+    display: none;
+  }
+  .banner .arrow {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 0.8rem;
+  }
+  nav ul {
+    font-size: 0.8rem;
+  }
+  .banner h1 {
+    font-size: 24px;
+    left: 1rem;
+    bottom: 1rem;
+  }
+  .banner .arrow {
+    display: none;
+  }
+}
