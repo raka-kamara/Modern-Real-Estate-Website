@@ -206,8 +206,98 @@ margin-bottom: 8px;
     height: 510px;
 }
 
-
 /* discover ends here */
+
+
+/* property starts here */
+.property-txt{
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0px 56px 0px;
+}
+.property-txt h2{
+  width: 35%;
+  font-size: 52px;
+  font-weight: 400;
+}
+.property-txt p{
+  width: 44%;
+  color: #70707B;
+  font-weight: 400;
+  font-size: 20px;
+}
+.property-box{
+  width: 411px;
+  margin-top: 20px;
+}
+.type{
+  background: black;
+  color: white;
+  display: flex;
+  height: 36px;
+  width: 99px;
+  padding: 8px 12px;
+  gap: 8px;
+  border-radius: 22px;
+}
+.type1{
+  background: black;
+  color: white;
+  height: 36px;
+  width: 99px;
+  padding: 8px 12px;
+  border-radius: 22px;
+  text-align: center;
+}
+.type-btn{
+  display: flex;
+  gap: 8px;
+}
+.property-img{
+  position: relative;
+  width: 100%;
+}
+.type-btn{
+  position: absolute;
+  top: 16px;
+  left: 190px;
+}
+.property-name{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.property-location{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  color: #70707B;
+  margin: 4px 0px 16px 0px;
+}
+.property-info{
+  display: flex;
+  justify-content: space-between;  
+  font-weight: 400;
+  font-size: 16px;
+  color: #70707B;    
+  margin-top: 16px;                                                                                                                                                                 
+}
+.property-info1{
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+.property-container{
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 1fr;  */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+}
+
+/* property ends here */
 
 /* responsive styles */
 @media (max-width: 1440px) {
